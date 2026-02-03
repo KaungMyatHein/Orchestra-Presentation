@@ -425,8 +425,8 @@
     "BrandA": {
       "Button": {
         "Background": {
-          "Default": "{Bluelight/700}",
-          "Disable": "{Bluelight/200}"
+          "Default": "{Fuchsia/700}",
+          "Disable": "{Fuchsia/200}"
         },
         "Text": {
           "Default": "{Base/White}"
