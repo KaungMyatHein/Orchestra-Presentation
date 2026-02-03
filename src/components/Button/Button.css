@@ -1,0 +1,89 @@
+:root {
+  --color-button-text-default: #ffffff;
+  --color-button-background-default: #087443;
+  --color-button-background-disable: #aaf0c4;
+  --shadow-xs: 0px 1px 2px rgba(16, 24, 40, 0.05);
+}
+
+.button {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px; /* Assuming radius from design or standard */
+  border: none;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+/* Hierarchy: Primary */
+.button-primary {
+  background-color: var(--color-button-background-default);
+  color: var(--color-button-text-default);
+  box-shadow: var(--shadow-xs);
+}
+
+.button-primary:hover {
+  background-color: #065d36; /* Darker shade approximation */
+}
+
+.button-primary:disabled,
+.button-primary.state-disabled {
+  background-color: var(--color-button-background-disable);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Sizes */
+.size-sm {
+  height: 36px;
+  padding: 0 14px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.size-md {
+  height: 40px;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.size-lg {
+  height: 44px;
+  padding: 0 18px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.size-xl {
+  height: 48px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.size-2xl {
+  height: 60px;
+  padding: 0 28px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Icon Handling */
+.button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon positions */
+.button.icon-dot-leading {
+  gap: 6px;
+}
+
+/* Typography Overrides based on size if needed */
+/* Figma showed specific font styles for sizes, approximating here with standard scale */
