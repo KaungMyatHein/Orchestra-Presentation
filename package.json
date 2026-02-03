@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "tokens": "node build.js web"
+    "tokens": "node build.js all",
     "lint": "eslint .",
     "preview": "vite preview"
   },
